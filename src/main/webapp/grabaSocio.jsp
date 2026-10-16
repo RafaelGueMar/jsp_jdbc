@@ -11,7 +11,7 @@
   <body>
     <%
       Class.forName("com.mysql.jdbc.Driver");
-      Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/baloncesto","root", "user");
+      Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/baloncesto","root", "root");
       Statement s = conexion.createStatement();
 
       request.setCharacterEncoding("UTF-8");

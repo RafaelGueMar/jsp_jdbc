@@ -13,7 +13,7 @@
     <h1>Listado de Socios</h1>
 	<%
 		Class.forName("com.mysql.jdbc.Driver");
-		Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/baloncesto","root", "user");
+		Connection conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/baloncesto","root", "root");
 		Statement s = conexion.createStatement();
 		
 		ResultSet listado = s.executeQuery ("SELECT * FROM socio");
